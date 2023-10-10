@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/calculator', function () {
     return view('calculator');
 });
+
+Route::get('/state-machine', function () {
+    return view('state_machine');
+});
