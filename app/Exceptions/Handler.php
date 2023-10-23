@@ -40,6 +40,7 @@ class Handler extends ExceptionHandler
                         'code' => $e->getCode(),
                         'file' => $e->getFile(),
                         'line' => $e->getLine(),
+                        'class' => $e::class,
                     ]
                 ],
                 400,
