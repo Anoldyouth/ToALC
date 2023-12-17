@@ -23,3 +23,5 @@ Route::post('calculate', [\App\Http\Controllers\CalculatorController::class, 'ca
 Route::get('state-machine', [\App\Http\Controllers\StateMachineController::class, 'stateMachine']);
 
 Route::post('pda', [\App\Http\Controllers\PushDownAutomatonController::class, 'pda']);
+
+Route::post('syntax-analyzer', [\App\Http\Controllers\SyntaxAnalyzerController::class, 'syntaxAnalyzer']);
