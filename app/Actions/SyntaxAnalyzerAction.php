@@ -332,7 +332,12 @@ class SyntaxAnalyzerAction
                     do {
                         $i++;
 
-                        $first = $this->first(Arr::get($transition, $i));
+                        if (isset($transition[$i])) {
+                            $first = $this->first($transition[$i]);
+                        } else {
+                            $first = [];
+                        }
+
                         $firstWithoutEps = array_diff($first, [self::EPS]);
 
                         if (!empty($firstWithoutEps)) {
